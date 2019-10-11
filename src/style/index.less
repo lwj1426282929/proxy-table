@@ -1,0 +1,18 @@
+@import './reset.less';
+
+.el-table {
+  .el-input {
+    position: relative;
+    &.is-required:before {
+      position: absolute;
+      content: "*";
+      color: #f56c6c;
+      left: 0px;
+      top: 4px;
+    }
+    .el-input__inner {
+      border: 0 none;
+      background: none;
+    }
+  }
+}
